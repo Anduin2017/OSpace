@@ -1,0 +1,34 @@
+﻿<Window x:Class="OSpace.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="369" Width="260" WindowStartupLocation="CenterScreen" Background="White" WindowStyle="None" AllowsTransparency="True" BorderThickness="7" Deactivated="Window_Deactivated" ShowInTaskbar="False" Topmost="True">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.Effect>
+        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Direction="225" Opacity="0.15" Color="#FF211613"  />
+    </Window.Effect>
+    <Border BorderBrush="#FF959595" BorderThickness="0.2">
+        <Grid MouseDown="Grid_MouseDown">
+            <Grid Margin="0,0,0,294" Background="#FFEDF0F4">
+                <!--<Grid Margin="0,0,0,294" BorderBrush="#FFD3DBE7" Background="#FFEDF0F4" BorderThickness="0,0,0,1">-->
+                <Grid.Effect>
+                    <DropShadowEffect Color="#FF0077AE" Direction="150" ShadowDepth="0.5" Opacity="0.5" BlurRadius="6" />
+                </Grid.Effect>
+                <TextBlock x:Name="Sign_in" Text="Sign in" Margin="17,16,121,16" FontSize="19" Foreground="#FF666666"/>
+            </Grid>
+            <Label x:Name="Lab_Account" Content="Account:" Margin="10,72,143,255" FontFamily="Microsoft YaHei UI"/>
+            <TextBox x:Name="Account" Margin="20,98,19,235"/>
+            <Label x:Name="Lab_Password" Content="Password:" Margin="11,131,143,196" FontFamily="Microsoft YaHei UI"/>
+            <PasswordBox Margin="20,159,19,174"/>
+            <Button x:Name="But_Sign_in" Style="{StaticResource ResourceKey=Glowing}" IsDefault="True" Content="Sign in" Margin="154,204,19,111" Background="#FF4CC6FF" Click="Button_Click" FontSize="14"/>
+            <Border Height="1" Margin="20,309,19,0" VerticalAlignment="Top" BorderBrush="#FFBBBBBB" Background="#FFB9B9B9"/>
+            <Label x:Name="Label_sign_up" Foreground="#FF4284BC" Content="注册新账号" HorizontalAlignment="Right" Height="34" Margin="0,312,102,0" VerticalAlignment="Top" Width="106" FontSize="12" Cursor="Hand" FontFamily="Microsoft YaHei"/>
+            <Label x:Name="Label_sign_up_Copy" Foreground="#FF4284BC" Content="隐私声明" HorizontalAlignment="Right" Height="34" Margin="0,312,8,0" VerticalAlignment="Top" Width="122" FontSize="12" Cursor="Hand" FontFamily="Microsoft YaHei"/>
+        </Grid>
+    </Border>
+</Window>

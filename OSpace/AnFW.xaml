@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="OSpace.AnFW"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OSpace"
+             mc:Ignorable="d" Height="55.667">
+    <Grid x:Name="back" Margin="0,0,0,0"  Background="#FFF6F7F9">
+        <Border BorderThickness="1,1,1,1" BorderBrush="#FFDDE1E8" CornerRadius="1.5">
+            <Grid>
+                <Label x:Name="Name" Content="Name Of OS" Margin="58,3,0,0" FontSize="15" Foreground="#FF333333" Height="33" VerticalAlignment="Top"  />
+                <Label x:Name="Identifier" Content="Identifier:"  FontSize="11" Foreground="#FF898989" HorizontalAlignment="Left" Width="60" Margin="58,29,0,0" Height="26" VerticalAlignment="Top"  />
+                <Label x:Name="Identifiervalve" Content="Identifier:" Margin="143,29,0,0" FontSize="11" Foreground="#FF898989" Height="24" VerticalAlignment="Top"  />
+                <Rectangle Fill="#FFD1D1D1" HorizontalAlignment="Left" Margin="22.625,18.292,0,10" Stroke="#FF898989" Width="20" RadiusY="0.125" RadiusX="0.125" StrokeThickness="3"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="20.25,23.255,0,0" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.375" StrokeThickness="0.6" Height="2.625" VerticalAlignment="Top"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="20.25,0,0,23.287" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.375" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="20.25,0,0,18.912" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.375" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="39,23.255,0,0" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.25" StrokeThickness="0.6" Height="2.625" VerticalAlignment="Top"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="39,0,0,23.287" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.25" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="39,0,0,18.912" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.25" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="27.875,15,0,0" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="2.75" Height="7.25" VerticalAlignment="Top" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="34.5,15,0,0" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="2.75" Height="7.25" VerticalAlignment="Top" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="27.875,0,0,6.417" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="2.75" Height="7.25" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="34.5,0,0,6.417" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="2.75" Height="7.25" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="20.25,0,0,14.579" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.375" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+                <Rectangle Fill="#FF898989" HorizontalAlignment="Left" Margin="39,0,0,14.579" RadiusY="0.375" RadiusX="0.375" Stroke="#FF898989" Width="6.25" Height="2.625" VerticalAlignment="Bottom" StrokeThickness="0.6"/>
+
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
+
