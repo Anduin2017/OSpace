@@ -48,9 +48,9 @@ namespace OSpace
                 string res = (pro.StandardOutput.ReadToEnd());
                 return res;
             }
-            catch
+            catch (Exception e)
             {
-                MessageBox.Show("Critical Error!!!!");
+                MessageBox.Show(e.Message);
                 return "";
             }
         }
@@ -82,9 +82,9 @@ namespace OSpace
                 //MessageBox.Show(cmd + res);
                 return res;
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Critical Error!!!!");
+                MessageBox.Show(e.Message);
                 return "";
             }
         }
@@ -173,6 +173,7 @@ namespace OSpace
         {
             try
             {
+                if (OS_Profiles == "No such OS!") return new string[0];
                 int position = OS_Profiles.IndexOf(Target_Profile.Trim());
                 OS_Profiles = OS_Profiles.Substring(position);
                 List<string> returnvalve = new List<string>();
@@ -211,10 +212,10 @@ namespace OSpace
                         break;
                 return returnvalve.ToArray();
             }
-            catch
+            catch(Exception e)
             {
                 return new string[1] { "" };
-                MessageBox.Show("Critical Error");
+                MessageBox.Show(e.Message);
 
             }
         }
